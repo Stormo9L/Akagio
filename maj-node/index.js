@@ -7,6 +7,20 @@ server with details about the user. In this case, since the bot
 has no account, we provide a name of NoName, and a sx of M.
 
 A heartbeat is sent every 5 seconds to maintain a connection to the server
+
+Whenever the server messages the client, the function onmessage is called
+which parses the sent JSON and responds with the needed string
+*/
+
+/*
+Definitions of JSON strings:
+
+HELO: a confirmation string sent by both client and server when establishing
+    a connection
+
+TAIKYOKU: a message from the server asking the client to 'ready up' at the start
+        of each match. The client must respond with the strings GOK and NEXTREADY
+        
 */
 const WebSocket = require('isomorphic-ws');
 
