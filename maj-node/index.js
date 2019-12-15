@@ -128,6 +128,27 @@ setInterval(
 
  Upon discarding, instead of using TUVW, DEFG is used. Since every player knows
  what the others have discarded, these messages always are followed by a number
+
+ A lowercase t signals that a call is being made.
 */
 
 
+/*
+
+calls:
+Pon: 1
+Chi: 4
+
+*/
+
+/* Reach/Riichi is divided into 2 steps
+
+step 1 consists of REACH, who, and step
+        who is a number from 0 to 4, signalling who is making the declaration
+        for step 1, step is 1
+
+step 2 consists of Reach, who, ten, and step
+    who is the same number as in step 1, step is now equal to 2, and ten is the new
+    score of each player after the riichi
+
+*/
