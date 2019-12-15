@@ -118,3 +118,16 @@ setInterval(
         ws.send('<Z />');
     },
     5000);
+
+/*uppercase T is always you. The player to your right is U, then V, then W
+ When the only thing sent by the server is one of these letters, it is
+ telling the client who's turn it currently is
+
+ Additionally, when T sent to client it is followed by a number corresponding to
+ a tile. This only happens for T, as you only know what you drew.
+
+ Upon discarding, instead of using TUVW, DEFG is used. Since every player knows
+ what the others have discarded, these messages always are followed by a number
+*/
+
+
